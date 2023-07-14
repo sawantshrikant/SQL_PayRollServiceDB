@@ -9,3 +9,6 @@ Name varchar(255),
 Salary float,
 StartDate date
 )
+----UC3 Insert Query-----
+insert into EmployeePayRoll values('UV',87000,GETDATE())
+insert into EmployeePayRoll (Name,StartDate) values ('Dhoni',GETDATE())
