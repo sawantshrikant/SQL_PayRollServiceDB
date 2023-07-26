@@ -22,3 +22,6 @@ update EmployeePayRollDataBase set StartDate='03-05-2019', Salary=20000 where Na
 insert into EmployeePayRollDataBase values('Ashwin',77000,'09-20-2000')
 -------UC5 fetch specify employee date and fetch all employee based date range-----
 select * From EmployeePayRollDataBase WHERE StartDate BETWEEN '2019-01-01' and GETDATE()
+---------UC6 Add Gender Column and update gender column based on employee's Data----
+alter table EmployeePayRollDataBase add Gender char(1)
+update EmployeePayRollDataBase set Gender='M'
