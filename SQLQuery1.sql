@@ -27,4 +27,8 @@ alter table EmployeePayRollDataBase add Gender char(1)
 update EmployeePayRollDataBase set Gender='M'
 insert into EmployeePayRollDataBase values ('Meghna',80000,'01-10-2020','F'),('Kalpana',50000,'01-05-2019','F')
 -------UC7 Average Salary------
-select Gender, AVG(Salary) FROM EmployeePayRollDataBase Group By Gender
+select Gender, AVG(Salary) FROM EmployeePayRollDataBase Group By Genderxtend
+*--------UC8 Extend Data To Store Information-------
+alter table EmployeePayRollDataBase add Phone bigint
+alter table EmployeePayRollDataBase add Address varchar(255) default 'bnglr'
+alter table EmployeePayRollDataBase add Department varchar(255) not null default 'IT'
